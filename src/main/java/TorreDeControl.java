@@ -42,8 +42,10 @@ public class TorreDeControl {
         this.pistaDespejada = pistaDespejada;
     }
 
+    //Elejimos la siguiente aeronave en realizar una operación según la prioridad dada entre estas
     public void procesarSiguienteEvento() throws InterruptedException, IOException {
         if (pistaDespejada) {
+            //Priorizamos aterrizajes siempre
             if (aterrizajesPendientes.size() > 0) {
                 Collections.sort(aterrizajesPendientes);
                 simularOperacion(aterrizajesPendientes.getFirst(), "Aterrizaje", aterrizajesPendientes);
@@ -64,11 +66,14 @@ public class TorreDeControl {
         this.pistaDespejada = true;
     }
 
+    //Simulamos las distitnas operaciones
     public void simularOperacion(Aeronave aeronave, String operacion, List<Aeronave> listOP) throws InterruptedException, IOException {
+        //Si el metodo retraso devuelve >= 90 hacmeos esto
         if (aeronave.retraso()) {
             simularRetraso(listOP, aeronave, operacion);
 
         } else {
+            //Si no, simulamos el tiempo de la operación con sleep()
             this.pistaDespejada = false;
 
             System.out.println("Pista en uso por: " + aeronave);
@@ -79,22 +84,27 @@ public class TorreDeControl {
             System.out.println("...");
             System.out.println(operacion + " efectuado con éxito");
 
+            //Actualizamos el historial
             registrarLog(aeronave, operacion);
         }
 
+        //Quitamos la aeronave de la cola
         listOP.removeFirst();
         liberarPista();
     }
 
+    //Actualizamos un 'historial' que registra todas las operaciones llevadas con éxito
     public void registrarLog(Aeronave aeronave, String operacion) throws IOException {
         FileWriter fw = new FileWriter(logFile, true);
         LocalDateTime hora = LocalDateTime.now();
 
-        fw.write(hora + " || " + aeronave + " || " + "Operación: " + operacion);
+        fw.write(hora + " || " + aeronave + " || " + "Operación: " + operacion +
+                " || " + "Clasificación: " + aeronave.getClass().getSimpleName());
         fw.write("\n");
         fw.close();
     }
 
+    //Para visualizar el historial
     public void mostrarLog() throws IOException {
         FileReader fr = new FileReader(logFile);
 
@@ -106,6 +116,7 @@ public class TorreDeControl {
         }
     }
 
+    //En caso de que retraso() = true, simulamos un retraso
     public void simularRetraso(List<Aeronave> op, Aeronave aeronave, String operacion) throws InterruptedException, IOException {
         Scanner sc = new Scanner(System.in);
 
@@ -119,7 +130,7 @@ public class TorreDeControl {
             if (opcion.equalsIgnoreCase("S")) {
                 pistaDespejada = false;
                 System.out.println("En espera...");
-                Thread.sleep((long) rand * 60 * 1000);
+                Thread.sleep((long) rand * 60 * 1000); //Tiempo aleatorio entre 0 minutos y 4 horas
                 System.out.println("Espera finalizada");
                 registrarLog(aeronave, operacion);
                 return;
@@ -127,6 +138,7 @@ public class TorreDeControl {
             } else if (opcion.equalsIgnoreCase("N")) {
                 System.out.println("Saltando...");
                 return;
+                //Si saltamos no guardamos en el historial porque no hemos realizado esa acción
 
             } else {
                 System.out.println("Opción incorrecta");

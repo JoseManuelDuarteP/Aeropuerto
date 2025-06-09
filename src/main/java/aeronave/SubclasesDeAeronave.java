@@ -1,4 +1,5 @@
-package aeronave;//Ya que la única funcionalidad en la que se diferencian las distintas aeronaves es su prioridad,
+package aeronave;
+//Ya que la única funcionalidad en la que se diferencian las distintas aeronaves es su prioridad,
 //he optado por usar un enum aquí.
 
 public enum SubclasesDeAeronave {

@@ -24,7 +24,6 @@ public class Simulador {
             System.out.println("3. Procesar siguiente evento");
             System.out.println("4. Ver log");
             System.out.println("0. Salir");
-            System.out.println(Avion.class.getPackageName());
             opcion = comprobarInt(sc, "Ingrese una opcion:");
 
             switch (opcion) {
@@ -56,6 +55,7 @@ public class Simulador {
 
     }
 
+    //Introducimos una aeronave a la cola, junto con sus datos
     public static Aeronave registrarPeticion(Scanner sc) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         System.out.println("Ingresa el id del vuelo: ");
         String id = sc.nextLine();
@@ -70,6 +70,7 @@ public class Simulador {
         return avion;
     }
 
+    //Nos permite elejir que tipo de aeronave queremos instanciar (Avión, helicoptero, caza...)
     public static Aeronave elejirTipoAeronave(Scanner sc) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Reflections reflections = new Reflections("aeronave");
         Set<Class<? extends Aeronave>> subclasses = reflections.getSubTypesOf(Aeronave.class);
@@ -99,6 +100,7 @@ public class Simulador {
         return elejido.getDeclaredConstructor().newInstance();
     }
 
+    //Asignamos un tipo a la aeronave
     public static SubclasesDeAeronave sacarCategoriaAeronave(Scanner sc) {
 
         int i = 0;
@@ -112,6 +114,7 @@ public class Simulador {
         return SubclasesDeAeronave.values()[tipo];
     }
 
+    //Método para asegurar los int del usuario
     public static int comprobarInt(Scanner sc, String mensaje) {
         int dato;
 
