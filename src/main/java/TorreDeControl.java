@@ -68,7 +68,7 @@ public class TorreDeControl {
 
     //Simulamos las distitnas operaciones
     public void simularOperacion(Aeronave aeronave, String operacion, List<Aeronave> listOP) throws InterruptedException, IOException {
-        //Si el metodo retraso devuelve >= 90 hacmeos esto
+        //Si el metodo retraso devuelve true hacemos esto
         if (aeronave.retraso()) {
             simularRetraso(listOP, aeronave, operacion);
 
