@@ -1,3 +1,5 @@
+package aeronave;
+
 public abstract class Aeronave implements Comparable<Aeronave> {
     private String id;
     private SubclasesDeAeronave tipo;
@@ -8,6 +10,7 @@ public abstract class Aeronave implements Comparable<Aeronave> {
         this.tipo = tipo;
         this.prioridad = tipo.getPrioridad();
     }
+    public Aeronave() {}
 
     public String getId() {
         return id;
@@ -41,5 +44,11 @@ public abstract class Aeronave implements Comparable<Aeronave> {
     @Override
     public int compareTo(Aeronave o) {
         return Integer.compare(this.getPrioridad(), o.getPrioridad());
+    }
+
+    public boolean retraso() {
+        int rand = (int)(Math.random() * 101);
+
+        return rand >= 90;
     }
 }
