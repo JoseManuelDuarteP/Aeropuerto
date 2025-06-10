@@ -1,0 +1,29 @@
+2025-06-09T10:35:12.803060300 || ID: fawfaw1 Tipo: Militar Prioridad: 2 || Operación: Despegue
+2025-06-09T10:59:05.572748600 || ID: awaw Tipo: Carga Prioridad: 4 || Operación: Aterrizaje
+2025-06-09T10:59:14.834955600 || ID: fwafaw Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T10:59:19.666653100 || ID: fawf Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:06:09.168375 || ID: dfaw Tipo: Militar Prioridad: 2 || Operación: Despegue
+2025-06-09T11:33:18.592155100 || ID: fwafa Tipo: Carga Prioridad: 4 || Operación: Aterrizaje
+2025-06-09T11:33:23.798802600 || ID: daw Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:33:28.926879900 || ID: fawfaw Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:33:33.814616900 || ID: dfaw2 Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:33:38.701890700 || ID: dawdfaw Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:33:43.518733300 || ID: dawfaw Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:33:48.381607300 || ID: dfawfaw Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:35:33.044275600 || ID: awfaw Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:45:52.282073800 || ID: fawf Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T11:48:47.365530500 || ID: daw Tipo: Pasajeros Prioridad: 3 || Operación: Despegue
+2025-06-09T12:30:15.113716100 || ID: dfaw Tipo: Pasajeros Prioridad: 0 || Operación: Despegue
+2025-06-09T12:32:13.921095200 || ID: VVV Tipo: Carga Prioridad: 4 || Operación: Aterrizaje
+2025-06-09T12:32:27.100527500 || ID: DA Tipo: Emergencia Prioridad: 1 || Operación: Despegue
+2025-06-09T12:33:28.023704800 || ID: AAA Tipo: Militar Prioridad: 2 || Operación: Aterrizaje
+2025-06-09T12:33:33.683666400 || ID: VVV Tipo: Carga Prioridad: 4 || Operación: Aterrizaje
+2025-06-09T12:33:44.587176700 || ID: HHH Tipo: Emergencia Prioridad: 1 || Operación: Despegue
+2025-06-09T16:04:35.343628300 || ID: RATY56 Tipo: Emergencia Prioridad: 1 || Operación: Aterrizaje || Clasificación: class aeronave.Caza
+2025-06-09T16:06:35.982283600 || ID: FART-323 Tipo: Militar Prioridad: 2 || Operación: Aterrizaje || Clasificación: Caza
+2025-06-09T16:44:49.312238300 || ID: GAFT-6 Tipo: Emergencia Prioridad: 1 || Operación: Aterrizaje || Clasificación: Avion
+2025-06-09T16:45:00.291973500 || ID: RATTE-34 Tipo: Militar Prioridad: 2 || Operación: Despegue || Clasificación: Helicoptero
+2025-06-09T16:45:10.671319800 || ID: F-34 Tipo: Militar Prioridad: 2 || Operación: Despegue || Clasificación: Caza
+2025-06-09T16:45:17.738487800 || ID: F-36 Tipo: Militar Prioridad: 2 || Operación: Despegue || Clasificación: Caza
+2025-06-09T16:48:42.010292800 || ID: F-34 Tipo: Militar Prioridad: 2 || Operación: Aterrizaje || Clasificación: Caza
+2025-06-09T16:48:50.770109200 || ID: F-36 Tipo: Militar Prioridad: 2 || Operación: Aterrizaje || Clasificación: Caza

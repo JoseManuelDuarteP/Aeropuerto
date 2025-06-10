@@ -47,6 +47,7 @@ public class TorreDeControl {
         if (pistaDespejada) {
             //Priorizamos aterrizajes siempre
             if (aterrizajesPendientes.size() > 0) {
+                //Ordenamos la clase según hemos definido con la interfaz comparable
                 Collections.sort(aterrizajesPendientes);
                 simularOperacion(aterrizajesPendientes.getFirst(), "Aterrizaje", aterrizajesPendientes);
 
