@@ -27,3 +27,5 @@
 2025-06-09T16:45:17.738487800 || ID: F-36 Tipo: Militar Prioridad: 2 || Operación: Despegue || Clasificación: Caza
 2025-06-09T16:48:42.010292800 || ID: F-34 Tipo: Militar Prioridad: 2 || Operación: Aterrizaje || Clasificación: Caza
 2025-06-09T16:48:50.770109200 || ID: F-36 Tipo: Militar Prioridad: 2 || Operación: Aterrizaje || Clasificación: Caza
+2025-06-10T09:06:48.660427 || ID: few Tipo: Militar Prioridad: 2 || Operación: Aterrizaje || Clasificación: Avion
+2025-06-10T09:06:55.916462100 || ID: RED Tipo: Emergencia Prioridad: 1 || Operación: Despegue || Clasificación: Avion

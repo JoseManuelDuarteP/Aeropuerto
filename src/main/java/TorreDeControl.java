@@ -71,7 +71,7 @@ public class TorreDeControl {
     public void simularOperacion(Aeronave aeronave, String operacion, List<Aeronave> listOP) throws InterruptedException, IOException {
         //Si el metodo retraso devuelve true hacemos esto
         if (aeronave.retraso()) {
-            simularRetraso(listOP, aeronave, operacion);
+            simularRetraso(aeronave, operacion);
 
         } else {
             //Si no, simulamos el tiempo de la operación con sleep()
@@ -118,7 +118,7 @@ public class TorreDeControl {
     }
 
     //En caso de que retraso() = true, simulamos un retraso
-    public void simularRetraso(List<Aeronave> op, Aeronave aeronave, String operacion) throws InterruptedException, IOException {
+    public void simularRetraso(Aeronave aeronave, String operacion) throws InterruptedException, IOException {
         Scanner sc = new Scanner(System.in);
 
         int rand = (int)(Math.random() * 241);
